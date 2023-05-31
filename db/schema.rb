@@ -35,9 +35,9 @@ ActiveRecord::Schema.define(version: 2022_03_07_221959) do
 
   create_table "orders", force: :cascade do |t|
     t.float "sell_price"
+    t.boolean "fulfilled"
     t.integer "menu_item_id"
     t.integer "customer_id"
-    t.boolean "fulfilled"
     t.index ["customer_id"], name: "index_orders_on_customer_id"
     t.index ["menu_item_id"], name: "index_orders_on_menu_item_id"
   end
