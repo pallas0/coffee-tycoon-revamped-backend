@@ -23,6 +23,11 @@ development:
   pool: 5
   timeout: 5000
 
+production:
+  database: coffee-tycoon-backend
+  adapter: postgresql
+  
+
 test:
   adapter: postgresql
   encoding: unicode
