@@ -10,4 +10,4 @@ Bundler.require(:default, ENV['RACK_ENV'])
 require_all 'app'
 
 #added for Heroku connect
-set :database_file, “./database.yml”
+#set :database_file, “./database.yml”
