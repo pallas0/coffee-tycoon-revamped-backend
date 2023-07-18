@@ -23,10 +23,11 @@ development:
   pool: 5
   timeout: 5000
 
+#this is what got the app to deploy on Heroku
 production:
   database: coffee-tycoon-backend
   adapter: postgresql
-  
+
 
 test:
   adapter: postgresql
@@ -34,3 +35,26 @@ test:
   database: myapp_test
   pool: 5
   timeout: 5000
+
+
+  #sample/scratch
+# default: &default
+#   adapter: postgresql
+#   encoding: unicode
+#   pool: <%= ENV.fetch("RAILS_MAX_THREADS") { 5 } %>
+#   username: <%= ENV['DATABASE_USERNAME'] %>
+#   password: <%= ENV['DATABASE_PASSWORD'] %>
+#   host: <%= ENV['DATABASE_HOST'] %>
+#   port: <%= ENV.fetch('DATABASE_PORT') { 5432 } %>
+
+# development:
+#   <<: *default
+#   database: coffee_tycoon_development
+
+# test:
+#   <<: *default
+#   database: coffee_tycoon_test
+
+# production:
+#   <<: *default
+#   database: coffee_tycoon_production
