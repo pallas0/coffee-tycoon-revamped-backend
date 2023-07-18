@@ -16,25 +16,23 @@
 #   <<: *default
 #   database: db/production.postgresql
 
-development:
+development: &default
   adapter: postgresql
   encoding: unicode
   database: coffee-tycoon-backend
-  pool: 5
+  pool: <%= ENV.fetch("RAILS_MAX_THREADS") { 5 } %>
   timeout: 5000
 
 #this is what got the app to deploy on Heroku
 production:
+  <<: *default
   database: coffee-tycoon-backend
-  adapter: postgresql
+  #adapter: postgresql
 
 
 test:
-  adapter: postgresql
-  encoding: unicode
-  database: myapp_test
-  pool: 5
-  timeout: 5000
+  <<: *default
+  database: coffee-tycoon-backend
 
 
   #sample/scratch
