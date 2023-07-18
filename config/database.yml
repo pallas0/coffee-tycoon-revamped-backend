@@ -23,7 +23,7 @@ development: &default
   pool: <%= ENV.fetch("RAILS_MAX_THREADS") { 5 } %>
   timeout: 5000
 
-#this is what got the app to deploy on Heroku
+
 production:
   <<: *default
   database: coffee-tycoon-backend
