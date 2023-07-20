@@ -36,7 +36,7 @@ gem 'pg'
 gem "require_all", "~> 3.0"
 
 #Require Faker
-#gem "faker", "~> 2.9"
+gem "faker", "~> 2.9"
 
 # These gems will only be used when we are running the application locally
 group :development do
