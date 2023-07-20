@@ -1,3 +1,5 @@
+require 'faker'
+I18n.reload!
 puts "🌱 Seeding spices..."
 # Seed your database here
 
