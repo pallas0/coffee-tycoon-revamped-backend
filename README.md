@@ -1,118 +1,64 @@
-# Phase 3 Project Guidelines
+# Coffee Tycoon Game Backend
 
-## Learning Goals
+Welcome to the Coffee Tycoon Game! This is the backend repository for the game, built with React, Sinatra, and PostgreSQL. This project was developed collaboratively with [Jack Pena (jpena925)](https://github.com/jpena925), and [Rebekah Zhou (rebekah-zhou)](https://github.com/rebekah-zhou). In this game, you will become the tycoon you always wanted to be, managing your own coffee shop and striving to maximize your profits. 
 
-- Build a web basic API with Sinatra and Active Record to support a React
-  frontend
+## Prerequisites
 
-## Introduction
+Before running the backend, please make sure you have the following installed:
 
-Congrats on getting through all the material for Phase 3! Now's the time to put
-it all together and build something from scratch to reinforce what you know and
-expand your horizons.
+- Ruby: The backend is built using Ruby, so you need to have Ruby installed on your machine.
 
-The focus of this project is **building a Sinatra API backend** that uses
-**Active Record** to access and persist data in a database, which will be used
-by a separate **React frontend** that interacts with the database via the API.
+- Bundler: Bundler is used to manage Ruby gems. You can install it by running `gem install bundler`.
 
-## Requirements
-
-For this project, you must:
-
-- Use Active Record to interact with a database.
-- Have a minimum of two models with a one-to-many relationship.
-- Create API routes in Sinatra that handles at least three different CRUD
-  actions for at least one of your Active Record models.
-- Build a separate React frontend application that interacts with the API to
-  perform CRUD actions.
-- Use good OO design patterns. You should have separate classes for each of your
-  models, and create instance and class methods as necessary.
-
-For example, build a todo list application with a React frontend interface and a
-Sinatra backend API, where a user can:
-
-- **Create** a new todo
-- **Read** a list of all todos
-- **Update** an individual todo
-- **Delete** a todo
-
-A `Todo` can be tagged with a `Category`, so that each todo _belongs to_ a
-category and each category _has many_ todos.
+- PostgreSQL: Make sure you have PostgreSQL installed and running on your machine. You'll need it to set up the database for the game.
 
 ## Getting Started
 
-### Backend Setup
+To get started with the Coffee Tycoon Game backend, follow these steps:
 
-This repository has all the starter code needed to get a Sinatra backend up and
-running. [**Fork and clone**][fork link] this repository to get started. Then, run
-`bundle install` to install the gems.
+1. Clone the repository: If you haven't already, clone this repository to your local machine.
 
-[fork link]: https://github.com/learn-co-curriculum/phase-3-sinatra-react-project/fork
+2. Install dependencies: Navigate to the project directory and run `bundle install` to install all the required gems.
 
-The `app/controllers/application_controller.rb` file has an example GET route
-handler. Replace this route with routes for your project.
+3. Set up the database: Before running the server, you need to set up the PostgreSQL database. Make sure your PostgreSQL server is running, then run `bundle exec rake db:create` to create the necessary database.
 
-You can start your server with:
+4. Migrate the database: Run `bundle exec rake db:migrate` to apply the database migrations.
 
-```console
-$ bundle exec rake server
-```
+5. Start the server: Once the database is set up, you can start the backend server by running `bundle exec rake server`. The server will run on `http://localhost:9292`.
 
-This will run your server on port
-[http://localhost:9292](http://localhost:9292).
+## Gameplay Screenshots
+<img width="1346" alt="Screenshot 2023-07-26 at 1 05 21 PM" src="https://github.com/pallas0/coffee-tycoon-revamped-backend/assets/52135849/5ecc8cee-de28-4705-8a67-6a040dce0dac">
+<img width="1298" alt="Screenshot 2023-07-26 at 1 06 00 PM" src="https://github.com/pallas0/coffee-tycoon-revamped-backend/assets/52135849/274a04ac-61c7-4c27-a2ea-d360339c49f1">
+<img width="1401" alt="Screenshot 2023-07-26 at 1 07 27 PM" src="https://github.com/pallas0/coffee-tycoon-revamped-backend/assets/52135849/126df4df-7a5e-48c8-ad60-57a2fa6da054">
 
-### Frontend Setup
 
-Your backend and your frontend should be in **two different repositories**.
 
-Create a new repository in a **separate folder** with a React app for your
-frontend. `cd` out of the backend project directory, and use
-[create-react-app][] to generate the necessary code for your React frontend:
+## Deployed Project
 
-```console
-$ npx create-react-app my-app-frontend
-```
+The frontend of the Coffee Tycoon Game is deployed and can be accessed [here](https://coffee-tycoon-revamped-frontend.vercel.app/). The frontend is built with React and hosted on Vercel.
 
-After creating the project locally, you should also
-[create a repository on GitHub][create repo] to host your repo and help
-collaborate, if you're working with a partner.
+## How to Play
 
-### Fetch Example
+1. Upon starting the game, you'll have a starting budget of $40.
 
-Your React app should make fetch requests to your Sinatra backend! Here's an
-example:
+2. Your goal is to maximize your profits by selecting which drinks to add to your coffee shop's menu.
 
-```js
-fetch("http://localhost:9292/test")
-  .then((r) => r.json())
-  .then((data) => console.log(data));
-```
+3. Each day, 20 customers will visit your coffee shop. You need to determine which drinks to offer to meet their demands.
 
-## Project Tips
+4. Consider the weather, as it may affect customers' order selections.
 
-- This project is intended to focus more on the backend than the frontend, so
-  try and keep the React side of things relatively simple. Focus on working with
-  Active Record and performing CRUD actions. What are some interesting queries you can write? What kinds of questions can you ask of your data?
-- Once you have a project idea, come up with a domain model and decide what
-  relationships exist between the models in your application. Use a tool like
-  [dbdiagram.io][] to help visualize your models.
-- Decide on your API endpoints. What data should they return? What kind of CRUD
-  action should they perform? What data do they need from the client?
-- Use [Postman][postman download] to test your endpoints.
-- Use `binding.pry` to debug your requests on the server. It's very helpful to use a
-  `binding.pry` in your controller within a route to see what `params` are being
-  sent.
-- Use the [Network Tab in the Dev Tools][network tab] in the frontend to debug
-  your requests.
+5. At the end of each day, you'll receive a breakdown of your successes and failures.
 
-## Resources
+6. You'll have the chance to edit your menu and prepare for the next day.
 
-- [create-react-app][]
-- [dbdiagram.io][]
-- [Postman][postman download]
+7. Your ultimate goal is to become a Coffee Tycoon and manage a highly profitable coffee shop!
 
-[create-react-app]: https://create-react-app.dev/docs/getting-started
-[create repo]: https://docs.github.com/en/get-started/quickstart/create-a-repo
-[dbdiagram.io]: https://dbdiagram.io/
-[postman download]: https://www.postman.com/downloads/
-[network tab]: https://developer.chrome.com/docs/devtools/network/
+## Contributing
+
+If you'd like to contribute to the Coffee Tycoon Game, feel free to fork this repository and submit your pull requests. We welcome any improvements, bug fixes, or new features to make the game even more enjoyable.
+
+## License
+
+The Coffee Tycoon Game is open-source and licensed under the [MIT License](link-to-license-file).
+
+Enjoy the game and have fun becoming a Coffee Tycoon! ☕️
