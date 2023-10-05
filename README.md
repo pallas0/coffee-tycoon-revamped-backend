@@ -2,6 +2,11 @@
 
 Welcome to the Coffee Tycoon Game! This is the backend repository for the game, built with React, Sinatra, and PostgreSQL. This project was developed collaboratively with [Jack Pena (jpena925)](https://github.com/jpena925), and [Rebekah Zhou (rebekah-zhou)](https://github.com/rebekah-zhou). In this game, you will become the tycoon you always wanted to be, managing your own coffee shop and striving to maximize your profits. 
 
+## Gameplay Screenshots
+<img width="1346" alt="Screenshot 2023-07-26 at 1 05 21 PM" src="https://github.com/pallas0/coffee-tycoon-revamped-backend/assets/52135849/5ecc8cee-de28-4705-8a67-6a040dce0dac">
+<img width="1298" alt="Screenshot 2023-07-26 at 1 06 00 PM" src="https://github.com/pallas0/coffee-tycoon-revamped-backend/assets/52135849/274a04ac-61c7-4c27-a2ea-d360339c49f1">
+<img width="1401" alt="Screenshot 2023-07-26 at 1 07 27 PM" src="https://github.com/pallas0/coffee-tycoon-revamped-backend/assets/52135849/126df4df-7a5e-48c8-ad60-57a2fa6da054">
+
 ## Prerequisites
 
 Before running the backend, please make sure you have the following installed:
@@ -25,11 +30,6 @@ To get started with the Coffee Tycoon Game backend, follow these steps:
 4. Migrate the database: Run `bundle exec rake db:migrate` to apply the database migrations.
 
 5. Start the server: Once the database is set up, you can start the backend server by running `bundle exec rake server`. The server will run on `http://localhost:9292`.
-
-## Gameplay Screenshots
-<img width="1346" alt="Screenshot 2023-07-26 at 1 05 21 PM" src="https://github.com/pallas0/coffee-tycoon-revamped-backend/assets/52135849/5ecc8cee-de28-4705-8a67-6a040dce0dac">
-<img width="1298" alt="Screenshot 2023-07-26 at 1 06 00 PM" src="https://github.com/pallas0/coffee-tycoon-revamped-backend/assets/52135849/274a04ac-61c7-4c27-a2ea-d360339c49f1">
-<img width="1401" alt="Screenshot 2023-07-26 at 1 07 27 PM" src="https://github.com/pallas0/coffee-tycoon-revamped-backend/assets/52135849/126df4df-7a5e-48c8-ad60-57a2fa6da054">
 
 
 
