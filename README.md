@@ -1,6 +1,8 @@
 # Coffee Tycoon Game Backend
 
-Welcome to the Coffee Tycoon Game! This is the backend repository for the game, built with React, Sinatra, and PostgreSQL. This project was developed collaboratively with [Jack Pena (jpena925)](https://github.com/jpena925), and [Rebekah Zhou (rebekah-zhou)](https://github.com/rebekah-zhou). In this game, you will become the tycoon you always wanted to be, managing your own coffee shop and striving to maximize your profits. 
+Welcome to the Coffee Tycoon Game! In this game, you will become the tycoon you always wanted to be, managing your own coffee shop and striving to maximize your profits. 
+
+This is the backend repository for the game, built with React, Sinatra, and PostgreSQL. This project was developed collaboratively with [Jack Pena (jpena925)](https://github.com/jpena925), and [Rebekah Zhou (rebekah-zhou)](https://github.com/rebekah-zhou). 
 
 ## Gameplay Screenshots
 <img width="1346" alt="Screenshot 2023-07-26 at 1 05 21 PM" src="https://github.com/pallas0/coffee-tycoon-revamped-backend/assets/52135849/5ecc8cee-de28-4705-8a67-6a040dce0dac">
