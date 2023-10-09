@@ -1,6 +1,6 @@
 # Coffee Tycoon Game Backend
 
-Welcome to the Coffee Tycoon Game! In this game, you will become the tycoon you always wanted to be, managing your own coffee shop and striving to maximize your profits. 
+Welcome to the Coffee Tycoon Game! In this game, you will become the tycoon you always wanted to be, managing your own coffee shop and striving to maximize your profits.  Play the game [here](https://coffee-tycoon-revamped-frontend.vercel.app/)
 
 This is the backend repository for the game, built with React, Sinatra, and PostgreSQL. This project was developed collaboratively with [Jack Pena (jpena925)](https://github.com/jpena925), and [Rebekah Zhou (rebekah-zhou)](https://github.com/rebekah-zhou). 
 
