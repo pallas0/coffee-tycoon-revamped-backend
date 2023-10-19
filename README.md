@@ -9,6 +9,10 @@ This is the backend repository for the game, built with React, Sinatra, and Post
 <img width="1298" alt="Screenshot 2023-07-26 at 1 06 00 PM" src="https://github.com/pallas0/coffee-tycoon-revamped-backend/assets/52135849/274a04ac-61c7-4c27-a2ea-d360339c49f1">
 <img width="1401" alt="Screenshot 2023-07-26 at 1 07 27 PM" src="https://github.com/pallas0/coffee-tycoon-revamped-backend/assets/52135849/126df4df-7a5e-48c8-ad60-57a2fa6da054">
 
+## Database Design
+![tycoon_db_design](https://github.com/pallas0/coffee-tycoon-revamped-backend/assets/52135849/dcb43ebc-00fa-4eb2-bc4c-77bbf7f4c21b)
+
+
 ## Prerequisites
 
 Before running the backend, please make sure you have the following installed:
